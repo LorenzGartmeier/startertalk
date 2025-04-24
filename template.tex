@@ -1,0 +1,313 @@
+%\documentclass[fleqn,compress,utf8,aspectratio=169,t]{beamer}
+\documentclass[fleqn,compress,utf8,aspectratio=169,t,handout]{beamer}
+% use LMU theme
+\usetheme{LMU}
+
+% This setups a lot of recommended settings and packages you usually need
+% anyway. So let me take care for you and your document stays clear.
+
+% Examples: Tables, Graphics, Listings, Hyperref...
+%
+\input{recommended-settings}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                Citation styles                             %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% VERSION 1
+%if you want to cite in the text
+%\usepackage[style=ext-authoryear]{biblatex}
+%\DeclareOuterCiteDelims{parencite}{\bibopenbracket}{\bibclosebracket}
+%and use the command \parencite
+
+%%% VERSION 2
+%if you want to cite using a footnote	
+\usepackage[style=authortitle]{biblatex}
+\renewcommand{\thempfootnote}{\arabic{mpfootnote}}
+%use the command \footcite
+% change \vspace{NUMex}} to place your footnote a bit higher
+\addtobeamertemplate{footnote}{}{\vspace{5ex}}
+
+\addbibresource{lmu-example.bib}
+
+\setbeamersize{text margin left=13pt,text margin right=13pt}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                 Own packages                               %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+%\usepackage{blindtext}
+%\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{csquotes}
+
+
+\usepackage{amssymb}
+\usepackage{amsthm}
+%\usepackage{chngcntr}   %für \counterwithout
+\usepackage{pict2e} 		%für "picture"-Umgebung(s. 1.6.7)
+\usepackage{graphicx}
+\usepackage[ngerman,english]{babel}     %ngerman: Latex-Default, english: Default for this document!
+\usepackage{fancyhdr}
+\usepackage{color}
+%\usepackage{cases}	%f\"ur numcases
+\usepackage{mathtools}   % loads »amsmath«
+\usepackage{algorithm,algorithmicx}
+%\usepackage[]{algorithm2e}
+\usepackage[noend]{algpseudocode}
+% \usepackage{empheq}
+%% \usepackage{a4wide}
+\usepackage{datetime}
+\usepackage{ulem}
+\usepackage{fancybox}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+\usepackage{subcaption}
+%\usepackage[babel=true]{csquotes}
+\usepackage{microtype}  %Verbessert das Schriftbild erheblich, weniger Probleme mit overfullboxes, von Karlson
+%\usepackage{booktabs} 
+%\usepackage{subfigure}
+
+\usepackage{enumitem}
+\usepackage{nicefrac}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                 Own commands                             %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\newcommand{\R}{{\mathbb{R}}}
+%\newcommand{\C}{{\mathbb{C}}}
+\newcommand{\N}{{\mathbb{N}}}
+\newcommand{\Z}{{\mathbb{Z}}}
+\newcommand{\Q}{{\mathbb{Q}}}
+\newcommand{\E}{{\mathbb{E}}}
+\renewcommand{\P}{{\mathbb{P}}}
+\newcommand{\F}{{\mathcal{F}}}
+\newcommand{\Borel}[1]{{\mathcal{B}( #1 )}}
+\newcommand{\NV}[2]{{\mathcal{N}( #1 , #2 )}}		%Normalverteilt
+\renewcommand{\Re}[1]{\text{Re($#1$)}}
+\renewcommand{\Im}[1]{\text{Im($#1$)}}
+\newcommand{\vect}[2]{\begin{pmatrix} #1 \\ #2\end{pmatrix}}
+\newcommand{\norm}[1]{\left| \left| #1 \right| \right|}
+\newcommand{\IP}[2]{{\left\langle #1, #2 \right\rangle  }}
+\newcommand{\ra}{{\rightarrow}}
+\newcommand{\Ra}{{\Rightarrow}}
+\newcommand{\Lra}{{\Leftrightarrow}}
+\newcommand{\DefLra}{{: \Leftrightarrow}}
+\newcommand{\ind}{{{\perp\!\!\!\perp}}}		%independent
+\newcommand{\eps}{{\varepsilon}}
+\newcommand{\floor}[1]{{\lfloor #1 \rfloor}}
+\newcommand{\sgn}{{\textrm{sgn}}}
+\newcommand{\ol}[1]{\overline{#1}}
+\newcommand{\blue}[1]{{{\color{blue}#1}}} 
+\newcommand{\red}[1]{{{\color{red}#1}}} 
+\newcommand{\ul}[1]{\underline{#1}}
+\newcommand{\Qabbr}[3]{{Q_{[#1,#2,#3]}}}
+\newcommand{\Qexpand}[3]{{\begin{pmatrix} - & #1 & #3 \\ & - & #2 \\ & & -\end{pmatrix}}}
+\renewcommand{\qed}{\text{ } \text{ }\hfill\ensuremath{\blacksquare}}
+\newcommand{\qedwhite}{\hfill \hfill\ensuremath{\Box}}
+\def\Xint#1{\mathchoice
+	{\XXint\displaystyle\textstyle{#1}}%
+	{\XXint\textstyle\scriptstyle{#1}}%
+	{\XXint\scriptstyle\scriptscriptstyle{#1}}%
+	{\XXint\scriptscriptstyle\scriptscriptstyle{#1}}%
+	\!\int}
+\def\XXint#1#2#3{{\setbox0=\hbox{$#1{#2#3}{\int}$}
+		\vcenter{\hbox{$#2#3$}}\kern-.5\wd0}}
+\def\ddashint{\Xint=}
+\def\dashint{\Xint-}
+
+%\usepackage{appendixnumberbeamer}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                 Customizations                             %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% If you want no navigation uncomment this
+%\beamertemplatenavigationsymbolsempty
+
+% setup listings
+\lstset{
+  basicstyle=\ttfamily\color{black},
+  showstringspaces=false
+}
+
+\lstdefinestyle{highlight}{
+  keywordstyle=\color{red},
+  commentstyle=\color{lmu@darkgray}
+}
+
+\lstdefinestyle{basetex}{
+language={[LaTeX]Tex},
+basicstyle=\color{black!40},
+keywordstyle=\color{red!40},
+commentstyle=\color{lmu@darkgray!40},
+moredelim=**[il][\only<+>{\color{black}\lstset{style=highlight}}]{@}
+}
+
+\lstdefinestyle{basec}{
+language=C,
+basicstyle=\color{black!40},
+keywordstyle=\color{red!40},
+commentstyle=\color{green!40},
+moredelim=**[il][\only<+>{\color{black}\lstset{style=highlight}}]{@}
+}
+
+\setlist[itemize,1]{label={\small{$\blacksquare$}}}
+\setlist[itemize,2]{label={\small{$\bullet$}}}
+\setlist[itemize,3]{label={$-$}}
+\setlist[itemize,4]{label={$-$}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                  Title Page Data                           %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\addauthor}[3]{
+	\parbox[c]{0.26\textwidth}{
+		{\bfseries #1} \\
+		{\scriptsize{#2}}\\
+		{\scriptsize{#3}}
+	}}
+% helper command to add multiple authors
+\newcommand{\newauthor}[3]{
+\parbox[c]{0.26\textwidth}{
+{\bfseries #1} \\
+{\scriptsize{#2}}\\
+{\scriptsize{#3}}
+}
+%{#1}
+}
+
+% Authors
+\author[Viktor Bengs]{
+\newauthor{\underline{Viktor Bengs}}{Viktor.Bengs@lmu.de}{LMU Munich} \and
+\newauthor{Fabian Fumagalli}{eyke@lmu.de}{LMU Munich} \and
+\newauthor{Eyke Hüllermeier}{eyke@lmu.de}{LMU Munich}}
+
+
+% add additional authors
+\institute[LMU]{%
+\addauthor{Barbara Hammer}{Viktor.Bengs@lmu.de}{LMU Munich} \hspace{0.35cm}
+\addauthor{Alireza Javanmardi}{Alireza.Javanmardi@lmu.de}{LMU Munich}}
+
+
+
+
+%\date[\today]{\today}
+
+\title{Identification of the Generalized Condorcet Winner in Multi-dueling Bandits}
+%\title{short}
+%\subtitle{Paper ID: 11132}
+
+\hypersetup{
+  pdftitle={Title},
+  pdfauthor={Author},
+  hidelinks}
+\setbeamercolor{frametitle}{fg=lmu@green}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                  Document                                  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Overview %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\section{Multi-dueling Bandits}
+
+
+
+
+\begin{frame}
+	\vspace{0.2cm}
+	\begin{minipage}{.5\textwidth}
+		\begin{itemize}
+			\item \textbf{Given:} Different arms (options) $\{1,\ldots,m \}  = \mathcal{A}$
+			\begin{itemize}
+				\item smaller bullet point
+				\item smaller bullet point with citation 
+				% OPTION 1
+				%\parencite{Mesaoudi-PaulWB20}				
+				 %OPTION 2
+				\footnotemark
+			\end{itemize}
+			\item \textbf{Action:} Choose a $k$-sized subset of arms $S \subseteq \mathcal{A}$ \\
+			$\leadsto$ a \textit{multi-duel}
+		\end{itemize}
+	\end{minipage}
+	\hspace{0.05cm}
+	\begin{minipage}{.4\textwidth}
+		\begin{figure}
+			\centering
+			\includegraphics[width=.9\linewidth]{figs/AIML_Logo}
+		\end{figure}
+	\end{minipage}
+	\footnotetext{\cite{Mesaoudi-PaulWB20}}
+\end{frame}
+
+
+
+\begin{frame}
+only to see where the slide content startsonly to see where the slide content startsonly to see where the slide content startsonly to see where the slide content startsonly to see where the slide content startsonly to see where the slide content startsonly to see where the slide content startsonly to see where the slide content starts
+\begin{itemize}
+	\item only to see where the content starts
+\end{itemize}
+
+\end{frame}
+
+
+
+
+\section{References}
+
+\begin{frame}[allowframebreaks]
+\printbibliography
+\end{frame}
+
+\appendix
+
+\section{Appendix}
+\begin{frame}[noframenumbering]
+Appendix
+\end{frame}
+
+
+
+
+%
+%\begin{frame}
+%	\footnotesize
+%%  \frametitle{References}
+%  \nocite{*}
+%  \printbibliography[heading=none]
+%  \begin{itemize}
+%  	\item[\footnotesize \text{[1]}] El Mesaoudi-Paul, A., Weiß, D., Bengs, V., Hüllermeier, E., and  Tierney, K. Pool-based realtime algorithm configuration: A preselection bandit approach. LION, pp. 216-232, 2020.
+%  	\item[\footnotesize \text{[2]}] Agarwal, A., Johnson, N., and Agarwal, S. Choice bandits. NeurIPS, 2020.
+%  	\item[\footnotesize \text{[3]}] Dvoretzky, A., Kiefer, J., and Wolfowitz, J. Asymptotic minimax character of the sample distribution function and of the classical multinomial estimator. The Annals of Mathematical Statistics, 642-669, 1956.
+%  	\item[\footnotesize \text{[4]}]
+%  	Ren, W., Liu, J., and Shroff, N.\, B. The sample complexity of best-k items selection from pairwise
+%  	comparisons. ICML, 	pp. 8051–8072, 2020.
+%  	\item[\footnotesize \text{[5]}]
+%  	Karnin, Z. Verification based solution for structured MAB problems. NeurIPS, 2016.
+%   \item[\footnotesize \text{[6]}]	Plackett, R.\, L. The analysis of permutations. Journal of the Royal Statistical Society. Series C
+%  	(Applied Statistics), 24(1):193–202, 1975.
+%  	  	\item[\footnotesize \text{[7]}] Saha, A., and Gopalan, A. From PAC to instance-optimal sample complexity in the Plackett-Luce model. ICML, pp. 8367-8376, 2020.
+%
+%  \end{itemize}
+%\end{frame}
+
+\end{document}

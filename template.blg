@@ -1,0 +1,15 @@
+[0] Config.pm:307> INFO - This is Biber 2.17
+[0] Config.pm:310> INFO - Logfile is 'template.blg'
+[35] biber:340> INFO - === Fr Aug 11, 2023, 12:26:28
+[41] Biber.pm:418> INFO - Reading 'template.bcf'
+[69] Biber.pm:972> INFO - Found 1 citekeys in bib section 0
+[75] Biber.pm:4383> INFO - Processing section 0
+[79] Biber.pm:4574> INFO - Looking for bibtex file 'lmu-example.bib' for section 0
+[80] bibtex.pm:1713> INFO - LaTeX decoding ...
+[81] bibtex.pm:1518> INFO - Found BibTeX data source 'lmu-example.bib'
+[100] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[100] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[100] Biber.pm:4203> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[100] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
+[101] bbl.pm:654> INFO - Writing 'template.bbl' with encoding 'UTF-8'
+[102] bbl.pm:757> INFO - Output to template.bbl

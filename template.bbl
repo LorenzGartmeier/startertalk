@@ -1,0 +1,78 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{Mesaoudi-PaulWB20}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=915e01f0ab1692b48c73471fd2519888}{%
+           family={Mesaoudi{-}Paul},
+           familyi={M\bibinitperiod},
+           given={Adil\bibnamedelima El},
+           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c02c22e20f002b3bd0419e0e9572aa1d}{%
+           family={Wei{ß}},
+           familyi={W\bibinitperiod},
+           given={Dimitri},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=67c22d209df3e3e87e94e547c436da18}{%
+           family={Bengs},
+           familyi={B\bibinitperiod},
+           given={Viktor},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ce2458f8ac2ca4f2198649b4e8a00380}{%
+           family={Hüllermeier},
+           familyi={H\bibinitperiod},
+           given={Eyke},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4190451c0518db41f623509f6fe29813}{%
+           family={Tierney},
+           familyi={T\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{495edfc86a266c83dd8065a86d5fe8ff}
+      \strng{fullhash}{192ece53e5d96a9d2f7c5486db328a23}
+      \strng{bibnamehash}{495edfc86a266c83dd8065a86d5fe8ff}
+      \strng{authorbibnamehash}{495edfc86a266c83dd8065a86d5fe8ff}
+      \strng{authornamehash}{495edfc86a266c83dd8065a86d5fe8ff}
+      \strng{authorfullhash}{192ece53e5d96a9d2f7c5486db328a23}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{Lecture Notes in Computer Science}
+      \field{title}{Pool-Based Realtime Algorithm Configuration: A Preselection Bandit Approach}
+      \field{volume}{12096}
+      \field{year}{2020}
+      \field{pages}{216\bibrangedash 232}
+      \range{pages}{17}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

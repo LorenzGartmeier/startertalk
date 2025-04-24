@@ -1,0 +1,59 @@
+\mode<presentation>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Head & Foot Lines %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\defbeamertemplate*{headline}{lmu theme}{
+  %\leavemode%
+ % \begin{beamercolorbox}[ht=12mm,sep=3mm,%
+ %     leftskip=.01\paperwidth%
+  %  ]{section in head/foot}
+  %[wd=\paperwidth,ht=17mm,sep=3mm]
+    \begin{beamercolorbox}[ht=7mm,leftskip=0.03\paperwidth]{section in head/foot}
+    \ifnum\thepage>1\relax%
+    
+      \usebeamerfont{section in head/foot}
+      %change color of section
+      \color{lmu@background}
+      
+
+      \insertsection
+           
+    \fi
+  
+  \end{beamercolorbox}
+\vspace{0.3cm}
+}
+
+\defbeamertemplate*{footline}{lmu theme}{%
+	\leavevmode%
+	\ifnum\thepage>1
+	\begin{beamercolorbox}[wd=\paperwidth,ht=.5ex,dp=1.125ex,leftskip=1ex,rightskip=1ex]{author in head/foot}
+		%\relax%
+		\hbox{\includegraphics[width=0.2\textwidth, height=5mm]
+			{figs/AIML_Logo}
+		}\hfill
+	\MakeUppercase{\insertshortauthor}\qquad
+	\usebeamerfont{title in head/foot}\itshape {\tiny\inserttitle}
+	\hfill
+	\hbox{
+			\raggedright{ {\large\bfseries\insertframenumber}/\inserttotalframenumber}
+		}
+	\end{beamercolorbox}%
+
+	\fi
+	
+}
+
+     
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Sidebars %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Logo %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Frametitle %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\mode<all>
