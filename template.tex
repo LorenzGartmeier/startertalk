@@ -185,11 +185,6 @@ moredelim=**[il][\only<+>{\color{black}\lstset{style=highlight}}]{@}
 %{#1}
 }
 
-% Authors
-\author[Viktor Bengs]{
-\newauthor{\underline{Viktor Bengs}}{Viktor.Bengs@lmu.de}{LMU Munich} \and
-\newauthor{Fabian Fumagalli}{eyke@lmu.de}{LMU Munich} \and
-\newauthor{Eyke Hüllermeier}{eyke@lmu.de}{LMU Munich}}
 
 
 % add additional authors
@@ -200,15 +195,16 @@ moredelim=**[il][\only<+>{\color{black}\lstset{style=highlight}}]{@}
 
 
 
-%\date[\today]{\today}
+\date[\today]{\today}
 
-\title{Identification of the Generalized Condorcet Winner in Multi-dueling Bandits}
+\title{Reliable Attribution of GAN
+and Diffusion-based Image Generators}
 %\title{short}
 %\subtitle{Paper ID: 11132}
 
 \hypersetup{
-  pdftitle={Title},
-  pdfauthor={Author},
+  pdftitle={Reliable Attribution of GAN and Diffusion-based Image Generators},
+  pdfauthor={Lorenz Gartmeier},
   hidelinks}
 \setbeamercolor{frametitle}{fg=lmu@green}
 
@@ -227,47 +223,64 @@ moredelim=**[il][\only<+>{\color{black}\lstset{style=highlight}}]{@}
 
 
 
-\section{Multi-dueling Bandits}
 
-
-
-
-\begin{frame}
-	\vspace{0.2cm}
-	\begin{minipage}{.5\textwidth}
-		\begin{itemize}
-			\item \textbf{Given:} Different arms (options) $\{1,\ldots,m \}  = \mathcal{A}$
-			\begin{itemize}
-				\item smaller bullet point
-				\item smaller bullet point with citation 
-				% OPTION 1
-				%\parencite{Mesaoudi-PaulWB20}				
-				 %OPTION 2
-				\footnotemark
-			\end{itemize}
-			\item \textbf{Action:} Choose a $k$-sized subset of arms $S \subseteq \mathcal{A}$ \\
-			$\leadsto$ a \textit{multi-duel}
-		\end{itemize}
-	\end{minipage}
-	\hspace{0.05cm}
-	\begin{minipage}{.4\textwidth}
-		\begin{figure}
-			\centering
-			\includegraphics[width=.9\linewidth]{figs/AIML_Logo}
-		\end{figure}
-	\end{minipage}
-	\footnotetext{\cite{Mesaoudi-PaulWB20}}
-\end{frame}
-
+\section{Introduction}
 
 
 \begin{frame}
-only to see where the slide content startsonly to see where the slide content startsonly to see where the slide content startsonly to see where the slide content startsonly to see where the slide content startsonly to see where the slide content startsonly to see where the slide content startsonly to see where the slide content starts
 \begin{itemize}
-	\item only to see where the content starts
+	\item advancements of generative AI *show images*
+    \item cant rely on human eye anymore
+    \item potential misuse of AI
+    \item goal: attribute images to sources, point the companies at the misuse of their product, hold them responsible
+    \item capture open set problem with bayesian approach, analyze the effects of post-processing
 \end{itemize}
 
 \end{frame}
+
+\section{Background}
+
+\begin{frame}
+\begin{itemize}
+    \item GAN vs Diffusion based
+    \item metadata tags -> can be removed
+    \item fingerprints in frequency domain *show images*
+\end{itemize}
+\end{frame}
+
+\section{Open Set Problem}
+\begin{frame}
+\begin{itemize}
+    \item models shooting up left and right
+    \item likely to encounter images from models not included in training
+    \item classical approaches make oddly confident predictions since they cant express uncertainty
+    \item approaches to solve this issue e.g. with multiple classifiers
+\end{itemize}
+\end{frame}
+
+\section{Proposed Approach}
+\begin{frame}
+\begin{itemize}
+    \item Bayesian Neural Networks
+    \item key components, distribution over weights, updated according to bayes theorem
+    \item measure uncertainty with variance of weights distribution, distribution over classes
+    \item desired outcome with out-of-distribution data: low certainty
+    \item desired outcome with post-processed images: robustness, or at least lost certainty with wrong predictions
+\end{itemize}
+\end{frame}
+
+\section{Timeline}
+\begin{frame}
+\begin{itemize}
+    \item development of a baseline model with "classical" components
+    \item development of a Bayesian Neural Network
+    \item compare their predictive reliability
+    \item compare both results on the open world problem
+    \item compare the predictive reliability on post-processed images
+    
+\end{itemize}
+\end{frame}
+
 
 
 
@@ -285,29 +298,5 @@ only to see where the slide content startsonly to see where the slide content st
 Appendix
 \end{frame}
 
-
-
-
-%
-%\begin{frame}
-%	\footnotesize
-%%  \frametitle{References}
-%  \nocite{*}
-%  \printbibliography[heading=none]
-%  \begin{itemize}
-%  	\item[\footnotesize \text{[1]}] El Mesaoudi-Paul, A., Weiß, D., Bengs, V., Hüllermeier, E., and  Tierney, K. Pool-based realtime algorithm configuration: A preselection bandit approach. LION, pp. 216-232, 2020.
-%  	\item[\footnotesize \text{[2]}] Agarwal, A., Johnson, N., and Agarwal, S. Choice bandits. NeurIPS, 2020.
-%  	\item[\footnotesize \text{[3]}] Dvoretzky, A., Kiefer, J., and Wolfowitz, J. Asymptotic minimax character of the sample distribution function and of the classical multinomial estimator. The Annals of Mathematical Statistics, 642-669, 1956.
-%  	\item[\footnotesize \text{[4]}]
-%  	Ren, W., Liu, J., and Shroff, N.\, B. The sample complexity of best-k items selection from pairwise
-%  	comparisons. ICML, 	pp. 8051–8072, 2020.
-%  	\item[\footnotesize \text{[5]}]
-%  	Karnin, Z. Verification based solution for structured MAB problems. NeurIPS, 2016.
-%   \item[\footnotesize \text{[6]}]	Plackett, R.\, L. The analysis of permutations. Journal of the Royal Statistical Society. Series C
-%  	(Applied Statistics), 24(1):193–202, 1975.
-%  	  	\item[\footnotesize \text{[7]}] Saha, A., and Gopalan, A. From PAC to instance-optimal sample complexity in the Plackett-Luce model. ICML, pp. 8367-8376, 2020.
-%
-%  \end{itemize}
-%\end{frame}
 
 \end{document}
