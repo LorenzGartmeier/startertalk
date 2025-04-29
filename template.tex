@@ -189,8 +189,8 @@ moredelim=**[il][\only<+>{\color{black}\lstset{style=highlight}}]{@}
 
 % add additional authors
 \institute[LMU]{%
-\addauthor{Barbara Hammer}{Viktor.Bengs@lmu.de}{LMU Munich} \hspace{0.35cm}
-\addauthor{Alireza Javanmardi}{Alireza.Javanmardi@lmu.de}{LMU Munich}}
+\addauthor{Lorenz}{Lorenz.Gartmeier@campus.lmu.de}{LMU Munich} \hspace{0.35cm}
+\addauthor{Anatol Maier}{anatol.maier@neuraforge.de}{supervisor at Neuraforge AI Solutions GmbH}}
 
 
 
@@ -226,26 +226,170 @@ and Diffusion-based Image Generators}
 
 \section{Introduction}
 
+\begin{frame}
+	\begin{figure}
+		\includegraphics[width = 0.7 \textwidth]{figs/pope-in-coat.png}
+		\text{\footnotesize source: https://www.theguardian.com/commentisfree/2023/mar/27/pope-coat-ai-image-baby-boomers}
+	\end{figure}
+\end{frame}
+
 
 \begin{frame}
+	\begin{figure}
+		\includegraphics[width = 0.8 \textwidth]{figs/old-vs-new-generation.png}
+		\text{\footnotesize source: https://medium.com/@junehao/comparing-ai-generated-images-two-years-apart}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	Attribute images to source models, so that
 \begin{itemize}
-	\item advancements of generative AI *show images*
-    \item cant rely on human eye anymore
-    \item potential misuse of AI
-    \item goal: attribute images to sources, point the companies at the misuse of their product, hold them responsible
-    \item capture open set problem with bayesian approach, analyze the effects of post-processing
+    \item image can be identified as fake
+    \item companies can be pointed at the misuse of their product by users
+    \item companies can be hold responsible 
+    \item images from unknown sources don't get falsely attributed 
 \end{itemize}
+by using a Bayesian Deep Learning approach
 
 \end{frame}
 
 \section{Background}
 
 \begin{frame}
-\begin{itemize}
-    \item GAN vs Diffusion based
-    \item metadata tags -> can be removed
-    \item fingerprints in frequency domain *show images*
-\end{itemize}
+	\begin{figure}
+		\includegraphics[width = 0.7 \textwidth]{figs/C2PA.png}
+		\text{\footnotesize source: https://c2pa.org/specifications/specifications/2.1/specs/C2PA\_Specification.html}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\begin{figure}
+		\includegraphics[width = 0.8 \textwidth]{figs/GAN-Architecture.jpg}
+		\text{\footnotesize source: https://www.sabrepc.com/blog/Deep-Learning-and-AI/gans-vs-diffusion-models}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\begin{figure}
+		\includegraphics[width = 0.8 \textwidth]{figs/Diffusion-Architecture.jpg}
+		\text{\footnotesize source: https://www.sabrepc.com/blog/Deep-Learning-and-AI/gans-vs-diffusion-models}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\begin{figure}
+		\includegraphics[width = 0.6 \textwidth]{figs/noisy-vs-denoised.png}
+		\text{\footnotesize source: https://www.mathworks.com/help/wavelet/ug/wavelet-denoising.html}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\begin{figure}[h]
+    \centering
+    \begin{minipage}{0.45\textwidth}
+      \includegraphics[width = 0.8 \textwidth]{figs/ProGAN_Kitchen_F002.jpg}
+      \caption{fingerprint estimate with 2 residuals}
+    \end{minipage}
+    \hfill
+    \pause
+		\begin{minipage}{0.45\textwidth}
+      \includegraphics[width = 0.8 \textwidth]{figs/ProGAN_Kitchen_F008.jpg}
+      \caption{fingerprint estimate with 8 residuals}
+    \end{minipage}
+	\end{figure}
+  \text{\footnotesize source: Marra et al, "Do GANs leave artificial fingerprints?", 2018}
+\end{frame}
+
+\begin{frame}
+	\begin{figure}[h]
+    \centering
+    \begin{minipage}{0.45\textwidth}
+      \includegraphics[width = 0.8 \textwidth]{figs/ProGAN_Kitchen_F032.jpg}
+      \caption{fingerprint estimate with 32 residuals}
+    \end{minipage}
+    \hfill
+    \pause
+		\begin{minipage}{0.45\textwidth}
+      \includegraphics[width = 0.8 \textwidth]{figs/ProGAN_Kitchen_F128.jpg}
+      \caption{fingerprint estimate with 128 residuals}
+    \end{minipage}
+	\end{figure}
+  \text{\footnotesize       \space source: Marra et al, "Do GANs leave artificial fingerprints?", 2018}
+\end{frame}
+
+\begin{frame}
+	\begin{figure}[h]
+    \centering
+    \begin{minipage}{0.45\textwidth}
+      \includegraphics[width = 0.8 \textwidth]{figs/ProGAN_Kitchen_F512.jpg}
+      \caption{fingerprint estimate with 512 residuals}
+    \end{minipage}
+    \hfill
+    \pause
+		\begin{minipage}{0.45\textwidth}
+      \includegraphics[width = 0.9 \textwidth]{figs/ProGAN_Kitchen_F512_autocorrelation.png}
+      \caption{frequency domain}
+    \end{minipage}
+	\end{figure}
+  \text{\footnotesize source: Marra et al, "Do GANs leave artificial fingerprints?", 2018}
+\end{frame}
+
+\begin{frame}
+	\begin{figure}[h]
+    \centering
+    \begin{minipage}{0.3\textwidth}
+      \includegraphics[width = 0.9 \textwidth]{figs/resfft_biggan.png}
+      \caption{Big Gan}
+    \end{minipage}
+    \hfill
+    \pause
+		\begin{minipage}{0.3\textwidth}
+      \includegraphics[width = 0.9 \textwidth]{figs/resfft_glide_text2img.png}
+      \caption{Glide}
+    \end{minipage}
+    \hfill
+    \pause
+		\begin{minipage}{0.3\textwidth}
+      \includegraphics[width = 0.9 \textwidth]{figs/resfft_stable_diffusion.png}
+      \caption{Stable Diffusion}
+    \end{minipage}
+	\end{figure}
+  \text{\footnotesize source: Corvi et al, "ON THE DETECTION OF SYNTHETIC IMAGES GENERATED BY DIFFUSION MODELS", 2022}
+\end{frame}
+
+\begin{frame}
+    \begin{minipage}{0.45\textwidth}
+      GAN based
+      \begin{itemize}
+        \item NVIDIA GauGAN/Canvas
+        \item Rosebud.AI
+        \item DeepArt
+        \item StyleGAN
+        \item BigGAN
+        \item ProGAN
+        \item CycleGAN
+        \item StarGAN
+        \item Pix2Pix
+        \item DiscoGAN
+        \item WGAN-GP
+      \end{itemize}
+    \end{minipage}
+		\begin{minipage}{0.45\textwidth}
+      Diffusion based
+      \begin{itemize}
+        \item Stable Diffusion
+        \item Midjourney
+        \item DALL-E 3
+        \item Adobe Firefly
+        \item Runway Gen-2
+        \item Google's Imagen/ImageFX
+        \item Anthropic's Claude 3 Sonnet Vision
+        \item Leonardo.AI
+        \item ControlNet
+        \item Kandinsky
+        \item karlo-diffusion
+      \end{itemize}
+    \end{minipage}
 \end{frame}
 
 \section{Open Set Problem}
@@ -269,34 +413,44 @@ and Diffusion-based Image Generators}
 \end{itemize}
 \end{frame}
 
+\begin{frame}
+  \begin{figure}
+    \includegraphics[width = 0.9 \textwidth]{figs/Ann.png}
+  \end{figure}
+  \text{\footnotesize source: Magris et al, "Bayesian Learning for Neural Networks: an algorithmic survey", 2022}
+\end{frame}
+
+\begin{frame}
+  \begin{figure}
+    \includegraphics[width = 0.9 \textwidth]{figs/Bnn.png}
+  \end{figure}
+  \text{\footnotesize source: Magris et al, "Bayesian Learning for Neural Networks: an algorithmic survey", 2022}
+\end{frame}
+
+\begin{frame}
+  Update model weights according to Bayes theorem
+  \vfill
+  \centering
+  \begin{equation}
+    P(w|D) = \frac{P(D|w) \cdot P(w)}{P(D)}
+  \end{equation}
+  \vfill
+\end{frame}
+
+
+
+
+
 \section{Timeline}
 \begin{frame}
 \begin{itemize}
     \item development of a baseline model with "classical" components
     \item development of a Bayesian Neural Network
     \item compare their predictive reliability
-    \item compare both results on the open world problem
+    \item compare performances on the open set problem
     \item compare the predictive reliability on post-processed images
     
 \end{itemize}
 \end{frame}
-
-
-
-
-
-\section{References}
-
-\begin{frame}[allowframebreaks]
-\printbibliography
-\end{frame}
-
-\appendix
-
-\section{Appendix}
-\begin{frame}[noframenumbering]
-Appendix
-\end{frame}
-
 
 \end{document}

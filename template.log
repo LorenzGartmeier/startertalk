@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.22)  28 APR 2025 11:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.22)  29 APR 2025 05:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1447,8 +1447,12 @@ Package biblatex Info: ... file 'template.bbl' found.
 Package biblatex Info: Reference section=0 on input line 215.
 Package biblatex Info: Reference segment=0 on input line 215.
  (./template.nav)
+Overfull \hbox (16.03143pt too wide) in paragraph at lines 220--220
+\T1/lmss/m/n/8 (-20) Lorenz.Gartmeier@campus.lmu.de 
+ []
+
 LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 220.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmss.fd
+(/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmss.fd
 File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 Package microtype Info: Loading generic protrusion settings for font family
@@ -1513,14 +1517,19 @@ pdfTeX warning: pdflatex (file ./figs/siegel.pdf): PDF inclusion: multiple pdfs 
 >]
 File: figs/AIML_Logo.pdf Graphic file (type pdf)
 <use figs/AIML_Logo.pdf>
-Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 239.
+Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 234.
 (pdftex.def)             Requested size: 35.08667pt x 14.22539pt.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <6> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 239.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 234.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 239.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 234.
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <12> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 239.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 234.
+<figs/pope-in-coat.png, id=33, 3814.25pt x 2290.5575pt>
+File: figs/pope-in-coat.png Graphic file (type png)
+<use figs/pope-in-coat.png>
+Package pdftex.def Info: figs/pope-in-coat.png  used on input line 234.
+(pdftex.def)             Requested size: 300.43198pt x 180.41731pt.
 
 
 Missing character: There is no ; in font nullfont!
@@ -1528,15 +1537,20 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 File: figs/AIML_Logo.pdf Graphic file (type pdf)
 <use figs/AIML_Logo.pdf>
-Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 239.
+Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 234.
 (pdftex.def)             Requested size: 35.08667pt x 14.22539pt.
 [2
 
-]
+ <./figs/pope-in-coat.png>]
 File: figs/AIML_Logo.pdf Graphic file (type pdf)
 <use figs/AIML_Logo.pdf>
-Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 249.
+Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 242.
 (pdftex.def)             Requested size: 35.08667pt x 14.22539pt.
+<figs/old-vs-new-generation.png, id=47, 1927.2pt x 1084.05pt>
+File: figs/old-vs-new-generation.png Graphic file (type png)
+<use figs/old-vs-new-generation.png>
+Package pdftex.def Info: figs/old-vs-new-generation.png  used on input line 242.
+(pdftex.def)             Requested size: 343.38164pt x 193.15218pt.
 
 
 Missing character: There is no ; in font nullfont!
@@ -1544,14 +1558,14 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 File: figs/AIML_Logo.pdf Graphic file (type pdf)
 <use figs/AIML_Logo.pdf>
-Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 249.
+Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 242.
 (pdftex.def)             Requested size: 35.08667pt x 14.22539pt.
 [3
 
-]
+ <./figs/old-vs-new-generation.png>]
 File: figs/AIML_Logo.pdf Graphic file (type pdf)
 <use figs/AIML_Logo.pdf>
-Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 259.
+Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 254.
 (pdftex.def)             Requested size: 35.08667pt x 14.22539pt.
 
 
@@ -1560,15 +1574,24 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 File: figs/AIML_Logo.pdf Graphic file (type pdf)
 <use figs/AIML_Logo.pdf>
-Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 259.
+Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 254.
 (pdftex.def)             Requested size: 35.08667pt x 14.22539pt.
 [4
 
 ]
 File: figs/AIML_Logo.pdf Graphic file (type pdf)
 <use figs/AIML_Logo.pdf>
-Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 270.
+Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 263.
 (pdftex.def)             Requested size: 35.08667pt x 14.22539pt.
+<figs/C2PA.png, id=64, 932.48375pt x 608.2725pt>
+File: figs/C2PA.png Graphic file (type png)
+<use figs/C2PA.png>
+Package pdftex.def Info: figs/C2PA.png  used on input line 263.
+(pdftex.def)             Requested size: 300.46404pt x 195.997pt.
+
+Overfull \vbox (4.0886pt too high) detected at line 263
+ []
+
 
 
 Missing character: There is no ; in font nullfont!
@@ -1576,15 +1599,24 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 File: figs/AIML_Logo.pdf Graphic file (type pdf)
 <use figs/AIML_Logo.pdf>
-Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 270.
+Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 263.
 (pdftex.def)             Requested size: 35.08667pt x 14.22539pt.
 [5
 
-]
+ <./figs/C2PA.png>]
 File: figs/AIML_Logo.pdf Graphic file (type pdf)
 <use figs/AIML_Logo.pdf>
-Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 282.
+Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 270.
 (pdftex.def)             Requested size: 35.08667pt x 14.22539pt.
+<figs/GAN-Architecture.jpg, id=73, 1606.0pt x 903.375pt>
+File: figs/GAN-Architecture.jpg Graphic file (type jpg)
+<use figs/GAN-Architecture.jpg>
+Package pdftex.def Info: figs/GAN-Architecture.jpg  used on input line 270.
+(pdftex.def)             Requested size: 343.39635pt x 193.16045pt.
+
+Overfull \vbox (1.25204pt too high) detected at line 270
+ []
+
 
 
 Missing character: There is no ; in font nullfont!
@@ -1592,18 +1624,23 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 File: figs/AIML_Logo.pdf Graphic file (type pdf)
 <use figs/AIML_Logo.pdf>
-Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 282.
+Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 270.
 (pdftex.def)             Requested size: 35.08667pt x 14.22539pt.
 [6
 
-]
+ <./figs/GAN-Architecture.jpg>]
 File: figs/AIML_Logo.pdf Graphic file (type pdf)
 <use figs/AIML_Logo.pdf>
-Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 292.
+Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 277.
 (pdftex.def)             Requested size: 35.08667pt x 14.22539pt.
+<figs/Diffusion-Architecture.jpg, id=81, 1606.0pt x 903.375pt>
+File: figs/Diffusion-Architecture.jpg Graphic file (type jpg)
+<use figs/Diffusion-Architecture.jpg>
+Package pdftex.def Info: figs/Diffusion-Architecture.jpg  used on input line 277.
+(pdftex.def)             Requested size: 343.39635pt x 193.16045pt.
 
-
-LaTeX Warning: Empty bibliography on input line 292.
+Overfull \vbox (1.25204pt too high) detected at line 277
+ []
 
 
 
@@ -1612,14 +1649,187 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 File: figs/AIML_Logo.pdf Graphic file (type pdf)
 <use figs/AIML_Logo.pdf>
-Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 292.
+Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 277.
 (pdftex.def)             Requested size: 35.08667pt x 14.22539pt.
 [7
 
+ <./figs/Diffusion-Architecture.jpg>]
+File: figs/AIML_Logo.pdf Graphic file (type pdf)
+<use figs/AIML_Logo.pdf>
+Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 284.
+(pdftex.def)             Requested size: 35.08667pt x 14.22539pt.
+<figs/noisy-vs-denoised.png, id=90, 562.1pt x 421.575pt>
+File: figs/noisy-vs-denoised.png Graphic file (type png)
+<use figs/noisy-vs-denoised.png>
+Package pdftex.def Info: figs/noisy-vs-denoised.png  used on input line 284.
+(pdftex.def)             Requested size: 257.54848pt x 193.16135pt.
+
+Overfull \vbox (1.25294pt too high) detected at line 284
+ []
+
+
+
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+File: figs/AIML_Logo.pdf Graphic file (type pdf)
+<use figs/AIML_Logo.pdf>
+Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 284.
+(pdftex.def)             Requested size: 35.08667pt x 14.22539pt.
+[8
+
+ <./figs/noisy-vs-denoised.png>]
+File: figs/AIML_Logo.pdf Graphic file (type pdf)
+<use figs/AIML_Logo.pdf>
+Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 301.
+(pdftex.def)             Requested size: 35.08667pt x 14.22539pt.
+<figs/ProGAN_Kitchen_F002.jpg, id=99, 637.38126pt x 637.38126pt>
+File: figs/ProGAN_Kitchen_F002.jpg Graphic file (type jpg)
+<use figs/ProGAN_Kitchen_F002.jpg>
+Package pdftex.def Info: figs/ProGAN_Kitchen_F002.jpg  used on input line 301.
+(pdftex.def)             Requested size: 154.521pt x 154.521pt.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 301.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 301.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 301.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 301.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <8> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 301.
+<figs/ProGAN_Kitchen_F008.jpg, id=100, 637.38126pt x 637.38126pt>
+File: figs/ProGAN_Kitchen_F008.jpg Graphic file (type jpg)
+<use figs/ProGAN_Kitchen_F008.jpg>
+Package pdftex.def Info: figs/ProGAN_Kitchen_F008.jpg  used on input line 301.
+(pdftex.def)             Requested size: 154.521pt x 154.521pt.
+
+
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+File: figs/AIML_Logo.pdf Graphic file (type pdf)
+<use figs/AIML_Logo.pdf>
+Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 301.
+(pdftex.def)             Requested size: 35.08667pt x 14.22539pt.
+[9
+
+ <./figs/ProGAN_Kitchen_F002.jpg> <./figs/ProGAN_Kitchen_F008.jpg>]
+File: figs/AIML_Logo.pdf Graphic file (type pdf)
+<use figs/AIML_Logo.pdf>
+Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 318.
+(pdftex.def)             Requested size: 35.08667pt x 14.22539pt.
+<figs/ProGAN_Kitchen_F032.jpg, id=108, 637.38126pt x 637.38126pt>
+File: figs/ProGAN_Kitchen_F032.jpg Graphic file (type jpg)
+<use figs/ProGAN_Kitchen_F032.jpg>
+Package pdftex.def Info: figs/ProGAN_Kitchen_F032.jpg  used on input line 318.
+(pdftex.def)             Requested size: 154.521pt x 154.521pt.
+<figs/ProGAN_Kitchen_F128.jpg, id=109, 637.38126pt x 637.38126pt>
+File: figs/ProGAN_Kitchen_F128.jpg Graphic file (type jpg)
+<use figs/ProGAN_Kitchen_F128.jpg>
+Package pdftex.def Info: figs/ProGAN_Kitchen_F128.jpg  used on input line 318.
+(pdftex.def)             Requested size: 154.521pt x 154.521pt.
+
+Overfull \vbox (2.12251pt too high) detected at line 318
+ []
+
+
+
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+File: figs/AIML_Logo.pdf Graphic file (type pdf)
+<use figs/AIML_Logo.pdf>
+Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 318.
+(pdftex.def)             Requested size: 35.08667pt x 14.22539pt.
+[10
+
+ <./figs/ProGAN_Kitchen_F032.jpg> <./figs/ProGAN_Kitchen_F128.jpg>]
+File: figs/AIML_Logo.pdf Graphic file (type pdf)
+<use figs/AIML_Logo.pdf>
+Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 335.
+(pdftex.def)             Requested size: 35.08667pt x 14.22539pt.
+<figs/ProGAN_Kitchen_F512.jpg, id=117, 637.38126pt x 637.38126pt>
+File: figs/ProGAN_Kitchen_F512.jpg Graphic file (type jpg)
+<use figs/ProGAN_Kitchen_F512.jpg>
+Package pdftex.def Info: figs/ProGAN_Kitchen_F512.jpg  used on input line 335.
+(pdftex.def)             Requested size: 154.521pt x 154.521pt.
+<figs/ProGAN_Kitchen_F512_autocorrelation.png, id=118, 581.17125pt x 509.65407pt>
+File: figs/ProGAN_Kitchen_F512_autocorrelation.png Graphic file (type png)
+<use figs/ProGAN_Kitchen_F512_autocorrelation.png>
+Package pdftex.def Info: figs/ProGAN_Kitchen_F512_autocorrelation.png  used on input line 335.
+(pdftex.def)             Requested size: 173.83838pt x 152.44635pt.
+
+Overfull \vbox (2.12251pt too high) detected at line 335
+ []
+
+
+
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+File: figs/AIML_Logo.pdf Graphic file (type pdf)
+<use figs/AIML_Logo.pdf>
+Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 335.
+(pdftex.def)             Requested size: 35.08667pt x 14.22539pt.
+[11
+
+ <./figs/ProGAN_Kitchen_F512.jpg> <./figs/ProGAN_Kitchen_F512_autocorrelation.png>]
+File: figs/AIML_Logo.pdf Graphic file (type pdf)
+<use figs/AIML_Logo.pdf>
+Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 358.
+(pdftex.def)             Requested size: 35.08667pt x 14.22539pt.
+<figs/resfft_biggan.png, id=127, 1105.12875pt x 1105.12875pt>
+File: figs/resfft_biggan.png Graphic file (type png)
+<use figs/resfft_biggan.png>
+Package pdftex.def Info: figs/resfft_biggan.png  used on input line 358.
+(pdftex.def)             Requested size: 115.88174pt x 115.88174pt.
+<figs/resfft_glide_text2img.png, id=128, 1105.12875pt x 1105.12875pt>
+File: figs/resfft_glide_text2img.png Graphic file (type png)
+<use figs/resfft_glide_text2img.png>
+Package pdftex.def Info: figs/resfft_glide_text2img.png  used on input line 358.
+(pdftex.def)             Requested size: 115.88174pt x 115.88174pt.
+<figs/resfft_stable_diffusion.png, id=129, 1105.12875pt x 1105.12875pt>
+File: figs/resfft_stable_diffusion.png Graphic file (type png)
+<use figs/resfft_stable_diffusion.png>
+Package pdftex.def Info: figs/resfft_stable_diffusion.png  used on input line 358.
+(pdftex.def)             Requested size: 115.88174pt x 115.88174pt.
+
+Overfull \hbox (39.23796pt too wide) in paragraph at lines 358--358
+[]  
+ []
+
+
+
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+File: figs/AIML_Logo.pdf Graphic file (type pdf)
+<use figs/AIML_Logo.pdf>
+Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 358.
+(pdftex.def)             Requested size: 35.08667pt x 14.22539pt.
+[12
+
+ <./figs/resfft_biggan.png> <./figs/resfft_glide_text2img.png> <./figs/resfft_stable_diffusion.png>]
+File: figs/AIML_Logo.pdf Graphic file (type pdf)
+<use figs/AIML_Logo.pdf>
+Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 393.
+(pdftex.def)             Requested size: 35.08667pt x 14.22539pt.
+
+
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+File: figs/AIML_Logo.pdf Graphic file (type pdf)
+<use figs/AIML_Logo.pdf>
+Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 393.
+(pdftex.def)             Requested size: 35.08667pt x 14.22539pt.
+[13
+
 ]
 File: figs/AIML_Logo.pdf Graphic file (type pdf)
 <use figs/AIML_Logo.pdf>
-Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 299.
+Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 403.
 (pdftex.def)             Requested size: 35.08667pt x 14.22539pt.
 
 
@@ -1628,9 +1838,99 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 File: figs/AIML_Logo.pdf Graphic file (type pdf)
 <use figs/AIML_Logo.pdf>
-Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 299.
+Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 403.
 (pdftex.def)             Requested size: 35.08667pt x 14.22539pt.
-[8
+[14
+
+]
+File: figs/AIML_Logo.pdf Graphic file (type pdf)
+<use figs/AIML_Logo.pdf>
+Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 414.
+(pdftex.def)             Requested size: 35.08667pt x 14.22539pt.
+
+
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+File: figs/AIML_Logo.pdf Graphic file (type pdf)
+<use figs/AIML_Logo.pdf>
+Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 414.
+(pdftex.def)             Requested size: 35.08667pt x 14.22539pt.
+[15
+
+]
+File: figs/AIML_Logo.pdf Graphic file (type pdf)
+<use figs/AIML_Logo.pdf>
+Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 421.
+(pdftex.def)             Requested size: 35.08667pt x 14.22539pt.
+<figs/Ann.png, id=164, 300.8841pt x 150.3216pt>
+File: figs/Ann.png Graphic file (type png)
+<use figs/Ann.png>
+Package pdftex.def Info: figs/Ann.png  used on input line 421.
+(pdftex.def)             Requested size: 300.89711pt x 150.32808pt.
+
+
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+File: figs/AIML_Logo.pdf Graphic file (type pdf)
+<use figs/AIML_Logo.pdf>
+Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 421.
+(pdftex.def)             Requested size: 35.08667pt x 14.22539pt.
+[16
+
+ <./figs/Ann.png>]
+File: figs/AIML_Logo.pdf Graphic file (type pdf)
+<use figs/AIML_Logo.pdf>
+Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 428.
+(pdftex.def)             Requested size: 35.08667pt x 14.22539pt.
+<figs/Bnn.png, id=173, 300.8841pt x 150.3216pt>
+File: figs/Bnn.png Graphic file (type png)
+<use figs/Bnn.png>
+Package pdftex.def Info: figs/Bnn.png  used on input line 428.
+(pdftex.def)             Requested size: 300.89711pt x 150.32808pt.
+
+
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+File: figs/AIML_Logo.pdf Graphic file (type pdf)
+<use figs/AIML_Logo.pdf>
+Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 428.
+(pdftex.def)             Requested size: 35.08667pt x 14.22539pt.
+[17
+
+ <./figs/Bnn.png>]
+File: figs/AIML_Logo.pdf Graphic file (type pdf)
+<use figs/AIML_Logo.pdf>
+Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 438.
+(pdftex.def)             Requested size: 35.08667pt x 14.22539pt.
+
+
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+File: figs/AIML_Logo.pdf Graphic file (type pdf)
+<use figs/AIML_Logo.pdf>
+Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 438.
+(pdftex.def)             Requested size: 35.08667pt x 14.22539pt.
+[18
+
+{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
+File: figs/AIML_Logo.pdf Graphic file (type pdf)
+<use figs/AIML_Logo.pdf>
+Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 454.
+(pdftex.def)             Requested size: 35.08667pt x 14.22539pt.
+
+
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+File: figs/AIML_Logo.pdf Graphic file (type pdf)
+<use figs/AIML_Logo.pdf>
+Package pdftex.def Info: figs/AIML_Logo.pdf  used on input line 454.
+(pdftex.def)             Requested size: 35.08667pt x 14.22539pt.
+[19
 
 ]
 \tf@nav=\write7
@@ -1652,18 +1952,18 @@ Package logreq Info: Writing requests to 'template.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42839 strings out of 469626
- 827210 string characters out of 5471010
- 1699507 words of memory out of 5000000
- 68752 multiletter control sequences out of 15000+600000
- 688755 words of font info for 114 fonts, out of 8000000 for 9000
+ 43097 strings out of 469626
+ 833413 string characters out of 5471010
+ 1705538 words of memory out of 5000000
+ 68958 multiletter control sequences out of 15000+600000
+ 709962 words of font info for 145 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  128i,18n,123p,1071b,2461s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbo10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsso8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on template.pdf (8 pages, 209577 bytes).
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbo10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsso8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on template.pdf (19 pages, 13473707 bytes).
 PDF statistics:
- 155 PDF objects out of 1000 (max. 8388607)
- 115 compressed objects within 2 object streams
- 25 named destinations out of 1000 (max. 500000)
- 39034 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 273 PDF objects out of 1000 (max. 8388607)
+ 179 compressed objects within 2 object streams
+ 44 named destinations out of 1000 (max. 500000)
+ 51383 words of extra memory for PDF output out of 51595 (max. 10000000)
 
